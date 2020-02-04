@@ -1,0 +1,394 @@
+html {
+  background-color: #fff;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  box-shadow: inset 0 0 5px #314659;
+  background: #314659;
+}
+::-webkit-scrollbar-track {
+  background: 0 0;
+  border-radius: 1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+body {
+  min-width: 1350px;
+  color: #555 !important;
+  font-family: 'Lato', SpecialSymbol, DINRegular, -apple-system,
+    BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB',
+    'Segoe UI', 'Microsoft YaHei', 微软雅黑, sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+}
+a {
+  cursor: pointer;
+  color: #555;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  svg {
+    transition: none;
+  }
+  &:hover {
+    color: darken(#555, 20%);
+  }
+}
+ul,
+li {
+  list-style: none;
+}
+div,
+img,
+span,
+svg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button,
+a {
+  transition: all 0.25s linear;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.cu-p {
+  cursor: pointer;
+}
+.us-n {
+  user-select: none;
+}
+img {
+  height: 100%;
+  object-fit: cover;
+}
+//  单行文本溢出显示省略号
+.one-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.more-cut {
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+/* 消息 */
+
+.esa-layer {
+  position: fixed;
+  top: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: inherit;
+  width: 100%;
+  display: none;
+  z-index: 9999999;
+}
+
+.esa-layer-content {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 250px;
+  padding: 3px 9px;
+  font-size: 13px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+}
+
+
+.markdown-theme {
+  table {
+    display: table;
+    font-size: 13px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #555;
+    width: 100%;
+    margin-bottom: 24px;
+
+    th {
+      font-family: inherit;
+      font-size: inherit;
+      background: rgba(#fff, 0.6);
+      white-space: nowrap;
+      font-weight: 600;
+      border: 1px solid #555;
+      padding: 8px 16px;
+    }
+
+    td {
+      border: 1px solid #555;
+      padding: 8px 16px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    opacity: 0.9;
+  }
+  p {
+    line-height: 2.2em;
+    margin-bottom: 1em;
+  }
+  blockquote {
+    padding: 1em;
+    color: rgba(#000, 0.54);
+    border-left: 5px solid #dce6f0;
+    background: #f2f7fb;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  a {
+    color: #0088f5 !important;
+  }
+  ul {
+    padding-left: 20px !important;
+    list-style: square !important;
+  }
+  ul,
+  ol {
+    > li {
+      list-style: square !important;
+      line-height: 1.8em;
+      padding: 0.5em 0.8em;
+
+      &:hover {
+        background-color: rgba(197, 197, 197, 0.5);
+      }
+
+      > p {
+        text-indent: 0;
+      }
+
+      > ul {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    color: #159957;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin: 1em 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    margin: 1em 0;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin: 1em 0;
+  }
+
+  h4 {
+    font-weight: 500;
+    margin: 1em 0;
+  }
+
+  h5 {
+    font-weight: 500;
+    margin: 1em 0;
+  }
+
+  h6 {
+    font-weight: 400;
+    margin: 1em 0;
+  }
+  & > pre {
+    display: block;
+    color: white;
+    overflow-x: auto;
+    background: #282c34 !important;
+    padding: 14px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    & > code {
+      display: block;
+      color: #a6e22e;
+      overflow-x: auto;
+      font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New,
+        monospace !important;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  del {
+    text-decoration: line-through;
+  }
+  p {
+    font-size: 14px;
+    code {
+      background-color: #eee;
+      padding: 3px 4px;
+      border-radius: 4px;
+      color: #f56a00;
+    }
+  }
+}
+
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #66d9ef;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #a6e22e;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #98c379;
+}
+.hljs-built_in {
+  color: #66d9ef;
+}
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
