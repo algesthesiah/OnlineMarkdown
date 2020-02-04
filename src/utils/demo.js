@@ -9,7 +9,7 @@ export let demo =
 
 ## 我的公众号
 
-![微信公众号](http://blog.didispace.com/css/images/weixin.jpg)
+![微信公众号](http://cdn.algesthesiahunter.top/algesthesiafield.jpg)
 
 ## Markdown基础语法
 
