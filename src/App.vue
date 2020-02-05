@@ -88,9 +88,6 @@ export default {
       overflow: auto;
       padding: 12px;
     }
-    #markdownRender {
-      padding: 44px;
-    }
   }
 }
 </style>
