@@ -4,6 +4,7 @@
  */
 import marked from 'marked'
 import highlight from 'highlight.js'
+
 const renderer = new marked.Renderer()
 const imgRender = (src) => {
   if (!/http/.test(src)) {
@@ -28,7 +29,7 @@ marked.setOptions({
   smartLists: true,
   smartypants: false,
   highlight(code) {
-    return highlight.highlightAuto(code).value
+    return highlight.highlight('javascript', code).value
   },
 })
 export default (content) => {
