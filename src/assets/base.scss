@@ -154,7 +154,6 @@ img {
   display: inline-block;
 }
 
-
 .markdown-theme {
   table {
     display: table;
@@ -312,82 +311,67 @@ img {
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
-
 .hljs {
   display: block;
+  color: #a6e22e;
   overflow-x: auto;
-  padding: 0.5em;
-  background: #23241f;
-}
-
-.hljs,
-.hljs-tag,
-.hljs-subst {
-  color: #f8f8f2;
-}
-
-.hljs-strong,
-.hljs-emphasis {
-  color: #a8a8a2;
-}
-
-.hljs-bullet,
-.hljs-quote,
-.hljs-number,
-.hljs-regexp,
-.hljs-literal,
-.hljs-link {
-  color: #ae81ff;
-}
-
-.hljs-code,
-.hljs-title,
-.hljs-section,
-.hljs-selector-class {
-  color: #a6e22e;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-name,
-.hljs-attr {
-  color: #66d9ef;
-}
-
-.hljs-symbol,
-.hljs-attribute {
-  color: #66d9ef;
-}
-
-.hljs-params,
-.hljs-class .hljs-title {
-  color: #a6e22e;
-}
-
-.hljs-string,
-.hljs-type,
-.hljs-builtin-name,
-.hljs-selector-id,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-addition,
-.hljs-variable,
-.hljs-template-variable {
-  color: #98c379;
-}
-.hljs-built_in {
-  color: #66d9ef;
+  background: #282c34 !important;
+  border: none !important;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace !important;
+  padding: 1em !important;
+  font-size: 14px !important;
 }
 .hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+}
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: #66d9ef;
+}
 .hljs-deletion,
-.hljs-meta {
-  color: #75715e;
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #e06c75;
+}
+.hljs-literal {
+  color: #56b6c2;
+}
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string {
+  color: #98c379;
+}
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #d19a66;
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color: #61aeee;
+}
+.hljs-strong {
+  font-weight: 700;
+}
+.hljs-link {
+  text-decoration: underline;
 }
