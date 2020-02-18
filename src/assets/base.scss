@@ -183,7 +183,8 @@ img {
 
   img {
     max-width: 100%;
-    cursor: pointer;
+    max-height: 350px;
+    margin: 0 auto;
     display: block;
     text-align: center;
     border-radius: 2px;
@@ -205,7 +206,8 @@ img {
   a {
     color: #0088f5 !important;
   }
-  ul {
+  ul,
+  ol {
     padding-left: 20px !important;
     list-style: square !important;
   }
