@@ -214,6 +214,12 @@ img {
   ul,
   ol {
     > li {
+      code {
+        background-color: #eee;
+        padding: 3px 4px;
+        border-radius: 4px;
+        color: #f56a00;
+      }
       list-style: square !important;
       line-height: 1.8em;
       padding: 0.5em 0.8em;
